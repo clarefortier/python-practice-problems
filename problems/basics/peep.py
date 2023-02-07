@@ -7,8 +7,13 @@ def peep(p, e):
     Returns: True if peep = pp^e, False otherwise
     """
 
-    ### Replace pass with your code
-    pass
+    str_p = str(p)
+    str_e = str(e)
+    edited_p = int(2 * str_p)
+    exp = str(edited_p ** e)
+    if exp[0] == str_p and exp[-1] == str_p and exp[1] == str(e) and exp[2] == str(e):
+        return True
+    return False
 
 
 #############################################################
