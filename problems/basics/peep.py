@@ -11,7 +11,7 @@ def peep(p, e):
     str_e = str(e)
     edited_p = int(2 * str_p)
     exp = str(edited_p ** e)
-    if exp[0] == str_p and exp[-1] == str_p and exp[1] == str(e) and exp[2] == str(e):
+    if exp[1:-1] == 2 * str_e and exp[0] == str_p and exp[-1] == str_p:
         return True
     return False
 
